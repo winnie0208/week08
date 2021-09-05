@@ -1,0 +1,57 @@
+---
+title: DOYOGA 預約課程
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div class="container-md page-space">
+    <h2 class="text-primary text-center mb-6 mb-lg-4">立即預約</h2>
+    <ul class="process mb-8">
+        <li class="process-item">選擇方案</li>
+        <li class="process-item">填寫資料</li>
+        <li class="process-item now-process">完成預約</li>
+    </ul>
+    <div class="d-flex flex-column align-items-center mb-6 mb-lg-8">
+        <img src="./assets/images/check_circle_24dp.svg" alt="checked" class="icon-lg mb-5">
+        <p class="fs-md text-primary">已完成預約，以下是您的預約資訊:</p>
+    </div>
+    <div class="row d-flex flex-column">
+        <div class="col-xl-6 col-lg-8 mx-auto mb-6">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        預約資訊
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="chosen-state d-flex align-items-center mb-2">
+                            <p class="text-primary">你選擇的是</p> 
+                            <p class="fs-md text-secondary ms-1">首次體驗課程-基礎</p>
+                        </div>
+                        <ul class="text-primary px-0">
+                            <li>上課預約報到日：2021/07/21</li>
+                            <li>預約人：Joanne Chen</li>
+                            <li>年齡：18 歲</li>
+                            <li>性別：女</li>
+                            <li>電子信箱：example123@gmail.com</li>
+                            <li>手機號碼：0912-345-678</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-6 col-xl-4 mx-auto text-primary">
+            <h3 class="text-center mb-2">上課注意事項</h3>
+            <p class="mb-8">
+                第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。<br>
+                如欲更改體驗時間請提前通知我們喔！
+            </p>
+            <a href="index.html" class="btn btn-secondary w-100 w-rounded-2">返回首頁</a>
+        </div>
+    </div>
+    
+    
+</div>

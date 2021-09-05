@@ -1,0 +1,43 @@
+*{
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-family: "Source Han Sans TW",sans-serif;
+}
+h1{
+    font-size: $h1-font-size;
+    line-height: 54px;
+    margin-bottom: 0;
+}
+h2{
+    font-size: $h2-font-size;
+    line-height: 42px;
+    margin-bottom: 4px;
+}
+h3{
+    font-size: $h3-font-size;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.fs{
+    font-size: $font-size-base;
+    line-height: 24px;
+}
+.fs-sm{
+    font-size: $font-size-sm;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+.fs-md{
+    font-size: $font-size-md;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+.fs-lg{
+    font-size: $font-size-lg;
+    line-height: 36px;
+}
+.fs-xl{
+    font-size: $h2-font-size;
+    line-height: 42px;
+}

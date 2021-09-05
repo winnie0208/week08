@@ -1,0 +1,232 @@
+//banner
+.banner{
+  background-image: url(../images/banner.jpeg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  width: 100%;
+  padding: 175px 0;
+  display: flex;
+  align-items: center;
+}
+@media(min-width:768px){
+  .banner{
+    padding: 185px 0;
+  }
+  .banner-content{
+    width: 45%;
+  }
+  .banner-content h2{
+    font-size: $h1-font-size;
+    line-height: 54px;
+  }
+  .banner-content p{
+    font-size: $font-size-lg;
+    line-height: 36px;
+  }
+}
+//service
+.service-1{
+  background-image: url(../images/service-1.jpeg);
+  height: 420px;
+}
+.service-2{
+  background-image: url(../images/sevice-2.jpeg);
+  height: 420px;
+}
+.service-3{
+  background-image: url(../images/service-3.jpeg);
+  height: 420px;
+}
+//teacher
+.teach-1{
+  background-image: url(../images/teach-1.jpeg);
+  height: 628px;
+}
+.teacher-1{
+  background-image: url(../images/teacher-1.png);
+  width: 48px;
+  height: 48px;
+}
+.teacher-2{
+  background-image: url(../images/teacher-2.png);
+  width: 48px;
+  height: 48px;
+}
+.teacher-3{
+  background-image: url(../images/teacher-3.png);
+  width: 48px;
+  height: 48px;
+}
+.teacher-intro .card{
+  transform-origin: right;
+  border-width: 0;
+}
+.teacher-intro .card-body{
+  padding: 24px 32px;
+}
+.teacher-intro .card-text span{
+  display: none;
+}
+.teacher-intro .card:hover .card-text span{
+  display: block;
+}
+@media(min-width:768px){
+  .teacher-1{
+    width: 68px;
+    height: 68px;
+  }
+  .teacher-2{
+    width: 68px;
+    height: 68px;
+  }
+  .teacher-3{
+    width: 68px;
+    height: 68px;
+  }
+  .teacher-intro .card:hover{
+    width: 120%;
+  }
+  .teacher-intro .card:hover .card-body{
+    padding: 40px 48px;
+  }
+  .teacher-intro .card:hover .card-image{
+    width: 94px;
+    height: 94px;
+  }
+  .teacher-intro .card:hover .card-title{
+    font-size: $h3-font-size;
+    line-height: 30px;
+  }
+  .teacher-intro .card:hover .card-text{
+    font-size: $font-size-base;
+      line-height: 24px;
+  }
+
+}
+//space
+.space-1{
+  background-image: url(../images/space-1.jpg);
+  height: 210px;
+}
+.space-2{
+  background-image: url(../images/space-2.jpg);
+  height: 210px;
+}
+.space-3{
+  background-image: url(../images/space-3.jpg);
+}
+@media(min-width:768px){
+  .space-1{
+    height: 100%;
+  }
+  .space-2{
+    height: 207px;
+  }
+  .space-3{
+    height: 207px;
+  }
+}
+//class
+.class .swiper-slide{
+  width: 445px !important;
+}
+.class-1{
+  background-image: url(../images/class-1.jpg);
+  width: 48%;
+  height: 165px;
+}
+.class-2{
+  background-image: url(../images/class-2.jpg);
+  width: 48%;
+  height: 165px;
+}
+.class-3{
+  background-image: url(../images/class-3.jpg);
+  width: 48%;
+  height: 165px;
+}
+.class-4{
+  background-image: url(../images/class-4.jpg);
+  width: 48%;
+  height: 165px;
+}
+@media(min-width:576px){
+  .class .container-md{
+    height: inherit;
+  }
+  .class-1, .class-2, .class-3, .class-4{
+    height: 150px;
+  }
+}
+@media(min-width:768px){
+  .class .container-md{
+    height: 445px;
+  }
+  .class-intro{
+    height: 445px;
+  }
+  .class-1, .class-2, .class-3, .class-4{
+    width: 445px;
+    height: 445px;
+  }
+}
+
+//product
+.product-1{
+  background-image: url(../images/product-1.jpg);
+  height: 243px;
+}
+.product-2{
+  background-image: url(../images/product-2.jpg);
+  height: 243px;
+}
+.product-3{
+  background-image: url(../images/product-3.jpg);
+  height: 243px;
+}
+@media(min-width:576px){
+  .product-1, .product-2, .product-3{
+    height: inherit;
+  }
+}
+@media(min-width:768px){
+  .product-1, .product-2, .product-3{
+    height: 243px;
+  }
+}
+//comment
+.comment-1{
+  background-image: url(../images/user-1.png);
+  width: 60px;
+  height: 60px;
+}
+.comment-2{
+  background-image: url(../images/user-2.png);
+  width: 60px;
+  height: 60px;
+}
+.comment-3{
+  background-image: url(../images/user-3.png);
+  width: 60px;
+  height: 60px;
+}
+.comment-4{
+  background-image: url(../images/user-4.png);
+  width: 60px;
+  height: 60px;
+}
+.comment-5{
+  background-image: url(../images/user-5.png);
+  width: 60px;
+  height: 60px;
+}
+.comment-6{
+  background-image: url(../images/user-6.png);
+  width: 60px;
+  height: 60px;
+}
+.pages .btn span{
+  font-size: 40px;
+  line-height: 40px;
+}

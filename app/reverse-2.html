@@ -1,0 +1,138 @@
+---
+title: DOYOGA 預約課程
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div class="container-md page-space">
+    <h2 class="text-primary text-center mb-6 mb-lg-4">立即預約</h2>
+    <ul class="process mb-8">
+        <li class="process-item ">選擇方案</li>
+        <li class="process-item now-process">填寫資料</li>
+        <li class="process-item">完成預約</li>
+    </ul>
+    <div class="chosen-state d-flex justify-content-center align-items-center mb-6 mb-lg-8">
+        <p class="text-primary">你選擇的是</p> 
+        <p class="fs-md text-secondary ms-4">首次體驗課程-基礎</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-xl-6 col-xxl-4 mx-auto">
+            <ul class="list-style-num px-0">
+                <div class="q1 mb-8">
+                    <li class="d-block mb-5">是否接觸過瑜珈?</li>
+                    <div class="d-flex">
+                        <div class="radio-box me-8">
+                            <input type="radio" id="yes" value="yes" name="q1" class="radio-box">
+                            <label for="yes">是</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" id="no" value="yes" name="q1" class="radio-box">
+                            <label for="no">否</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="q2 mb-8">
+                    <li class="d-block mb-5">想改善的生活問題?</li>
+                    <div class="d-flex flex-wrap">
+                        <div class="check-box">
+                            <input type="checkbox" id="strength" value="strength" name="q2">
+                            <label for="strength">肌耐力不足</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="softness" value="softness" name="q2">
+                            <label for="softness">柔軟度不佳</label>
+                        </div>
+                        <div class="check-box ">
+                            <input type="checkbox" id="pressure" value="pressure" name="q2">
+                            <label for="pressure">壓力大</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="pose" value="pose" name="q2">
+                            <label for="pose">姿勢不正</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="sleep" value="sleep" name="q2">
+                            <label for="sleep">睡眠品質差</label>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="attention" value="attention" name="q2">
+                            <label for="attention">注意力不足</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="q3 mb-8">
+                    <li class="d-block mb-5">每週累積運動量約為多少？</li>
+                    <div class="d-flex flex-wrap">
+                        <div class="radio-box">
+                            <input type="radio" id="150m" value="150m" name="q3">
+                            <label for="150m">150 分鐘以上</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" id="75m" value="75m" name="q3">
+                            <label for="75m">75~150 分鐘</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" id="30m" value="30m" name="q3">
+                            <label for="30m">30~75 分鐘</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" id="0m" value="0m" name="q3">
+                            <label for="0m">30 分鐘以下</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="q4 mb-8">
+                    <li class="d-flex mb-1">上課預約報到日</li>
+                    <p class="fs-sm mb-2">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
+                    <div class="date-box">
+                        <input type="date" id="date">
+                        <label>
+                            <p class="month">MM</p>
+                            <p class="day">DD</p>
+                            <p class="year">YY</p>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="q5 mb-8">
+                    <li class="d-flex mb-4">填寫基本資料，完成預約後會寄送通知至電子信箱</li>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex mb-4">
+                            <div class="name w-50 me-2">
+                                <label for="name"id="name" class="text-primary d-block mb-2">姓名</label>
+                                <input type="text" id="name" class="input-secondary" placeholder="請輸入您的姓名">
+                            </div>
+                            <div class="age w-50">
+                                <label for="name"id="name" class="text-primary d-block mb-2">年齡</label>
+                                <input type="text" id="name" class="input-secondary" placeholder="請輸入您的年齡">
+                            </div>
+                        </div>
+                        <div class="gender mb-4">
+                            <label for="gender-select"id="gender" class="text-primary d-block mb-2">性別</label>
+                            <select name="gender" id="gender-select" class="select-secondary">
+                                <option value="female">女</option>
+                                <option value="male">男</option>
+                            </select>
+                        </div>
+                        <div class="mail mb-4">
+                            <label for="mail"id="mail" class="text-primary d-block mb-2">電子信箱</label>
+                            <input type="email" id="mail" class="input-secondary" value="email@example.com">
+                        </div>
+                        <div class="phone">
+                            <label for="phone"id="phone" class="text-primary d-block mb-2">手機號碼</label>
+                            <input type="tel" id="phone" class="input-secondary" value="0912-345-678">
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="reverse-3.html" class="d-block w-100">
+                    <input type="submit" value="送出"class="btn btn-secondary w-rounded-2 w-100">
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    
+    
+</div>

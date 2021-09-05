@@ -1,0 +1,29 @@
+.process{
+    display: flex;
+    justify-content: space-between;
+}
+.process-item{
+    display: inline-block;
+    background-color: $tertiary;
+    color: $primary;
+    padding: 12px 20px;
+    border-radius: 16px;
+    text-align: center;
+}
+.now-process{
+    background: $primary;
+    color: $white;
+}
+@media(min-width:576px){
+    .process{
+        justify-content: center;
+    }
+    .process-item{
+        margin: 0 15px;
+    }
+}
+@media(min-width:768px){
+    .process-item{
+        padding: 12px 48px;
+    }
+}

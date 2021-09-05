@@ -1,0 +1,29 @@
+.logo-white{
+    background-image: url(../images/DOYOGA-white.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 96px;
+    height: 24px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.subscribe-title{
+    font-size: $font-size-lg;
+    line-height: 36px;
+    margin-bottom: 8px;
+    color: $white;
+}
+@media(min-width:768px){
+    .subscribe-title{
+        font-size: $h2-font-size;
+        line-height: 42px;
+    }
+}
+@media(min-width:992px){
+    .subscribe-title{
+        margin-bottom: 0;
+    }
+}
