@@ -1,10 +1,62 @@
----
-title: DOYOGA 預約課程
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<div class="container-md page-space">
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOYOGA 預約課程</title>
+    <!-- adobe fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- custom -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="header bg-tertiary">
+    <div class="container-md d-flex justify-content-between align-items-center">
+      <a href="index.html" class="d-block my-7">
+        <h1 class="logo">DOYOGA</h1>
+      </a>
+      <ul class="menu-h mb-0 d-none d-lg-flex">
+        <li class="menu-h-item"><a href="#">課程介紹</a></li>
+        <li class="menu-h-item"><a href="#">瑜珈空間</a></li>
+        <li class="menu-h-item"><a href="#">當月課表</a></li>
+      </ul>
+      <div class="btns-group d-none d-lg-flex">
+        <a href="reverse.html" class="btn btn-outline-primary mx-2">立即預約</a>
+        <a href="#" class="btn btn-outline-primary mx-2">聯絡我們</a>
+      </div>
+      <button class="btn d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+        <span class="material-icons text-primary">menu</span>
+      </button>
+    </div>
+    </div>
+    <!-- start header-menu offcanvas-->
+    <div class="header-menu offcanvas offcanvas-top bg-tertiary p-6" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header border-bottom border-1 border-secondary d-flex justify-content-between align-items-start">
+        <h5 id="offcanvasTopLabel" class="logo-lg">DOYOGA</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pt-8 invisible-scrollbar">
+        <ul class="menu-v mb-8">
+          <li class="menu-v-item mb-5"><a href="#" class="fs-md text-primary">課程介紹</a></li>
+          <li class="menu-v-item mb-5"><a href="#" class="fs-md text-primary">瑜珈空間</a></li>
+          <li class="menu-v-item"><a href="#" class="fs-md text-primary">當月課表</a></li>
+        </ul>
+        <div class="icon-group-h">
+          <a href="#" class="icon-btn-item-md-s"><img src="./assets/images/icon-fb.svg" alt="facebook" class="icon-md"></a>
+          <a href="#" class="icon-btn-item-md-s"><img src="./assets/images/icon-ig.svg" alt="instagram" class="icon-md"></a>
+          <a href="#" class="icon-btn-item-md-s"><img src="./assets/images/icon-line.svg" alt="line" class="icon-md"></a>
+        </div>
+      </div>
+    </div>
+    <!-- end header-menu offcanvas-->
+    <!-- end header -->
+    <div class="container-md page-space">
     <h2 class="text-primary text-center mb-6 mb-lg-4">立即預約</h2>
     <ul class="process mb-8">
         <li class="process-item ">選擇方案</li>
@@ -136,3 +188,72 @@ current: index
     
     
 </div>
+
+
+    <!-- start footer -->
+    <div class="footer bg-primary">
+      <div class="subscribe border-bottom border-1 border-white">
+        <div class="container-md py-7 py-md-8">
+          <div class="row">
+            <div class="subscribe-title col-12 col-lg-12 col-xl-8">現在訂閱，獲得課程優惠碼！</div>
+            <div class="col-12 col-lg-6 col-xl-4">
+              <div class="input-group">
+                <input type="email" class="form-control fs-md text-primary" placeholder="輸入您的電子信箱" aria-label="mail" aria-describedby="button-addon2">
+                <button class="btn btn-secondary fs-md" type="button" id="button-addon2">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="footer-nav">
+        <div class="container-md d-flex justify-content-between py-7 py-md-8">
+          <ul class="menu-v">
+            <li class="menu-v-item"><a href="index.html" class="logo-white">DOYOGA</a></li>
+            <li class="menu-v-item"><a href="#" class="text-white">課程介紹</a></li>
+            <li class="menu-v-item"><a href="#" class="text-white">瑜珈空間</a></li>
+            <li class="menu-v-item mb-2 mb-md-0"><a href="#" class="text-white">當月課表</a></li>
+            <li class="menu-v-item copyright-xs d-block d-md-none text-white">All Rights Reserved.</li>
+          </ul>
+          <div class="copyright text-white text-center align-self-end d-none d-md-block">© 2021. All Rights Reserved.</div>
+          <div class="icon-btn-group-h">
+            <a href="#" class="icon-btn-item-sm-e"><img src="./assets/images/icon-fb-white.svg" alt="facebook" class="icon-sm"></a>
+            <a href="#" class="icon-btn-item-sm-e"><img src="./assets/images/icon-ig-white.svg" alt="instagram" class="icon-sm"></a>
+            <a href="#" class="icon-btn-item-sm-e"><img src="./assets/images/icon-line-white.svg" alt="line" class="icon-sm"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <!-- start fixed menu -->
+    <div class="fixed-menu d-none d-lg-block">
+  <div class="icon-btn-group-v">
+      <a href="#" class="icon-btn-item-lg-t"><img src="./assets/images/icon-fb.svg" alt="facebook" class="icon-xl"></a>
+      <a href="#" class="icon-btn-item-lg-t"><img src="./assets/images/icon-ig.svg" alt="instagram" class="icon-xl"></a>
+      <a href="#" class="icon-btn-item-lg-t"><img src="./assets/images/icon-line.svg" alt="line" class="icon-xl"></a>
+  </div>
+    </div>
+    <!-- end fixed menu -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+
+</html>
